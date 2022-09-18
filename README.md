@@ -34,3 +34,23 @@ lightdm
 https://tightvnc.com/
 
 ![](tightvnc.png)
+
+```
+tightvncserver -geometry 1024x768
+netstat -tulpn
+```
+
+# Create a Tunnel and Connect
+
+```
+ssh -L 5901:localhost:5901 -N -f kali@52.xx.xxx.160 -i kali-key.pem
+```
+
+![](kali-desktop.png)
+
+Use the Kali Remote Desktop. Kali on AWS EC2. Install full or top 10 Kali tools.
+
+```
+apt install kali-tools-full
+apt install kali-tools-top10
+```
